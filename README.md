@@ -47,6 +47,9 @@ climate-emissions-analysis/
    ```
 3. Open the notebook in the `analysis/` folder to explore the data and models
 
+## 📉Dashboard
+- {Dashboard created with streamlit:] (https://global-temperature-vs-co2-emissions-analysis-vpchvnb6bhroz8we7.streamlit.app/)
+
 ## 📚 Data Sources
 
 - [NASA GISTEMP Surface Temperature Data](https://data.giss.nasa.gov/gistemp/)
