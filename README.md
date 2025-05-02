@@ -1,32 +1,32 @@
-# CO₂ Emissions and Global Temperature Anomalies
+# Multivariate Climate Analysis: CO₂ and Global Temperature Anomalies
 
-This project investigates the relationship between global carbon dioxide (CO₂) emissions and global surface temperature anomalies using publicly available historical data.
+This project explores the relationship between greenhouse gas emissions and global temperature anomalies using historical climate data. It includes both simple and multivariate regression analyses to understand how different emissions contribute to global warming.
 
-## 🔍 Research Question
+## 🔍 Research Questions
 
-**How do CO₂ emissions correlate with global temperature anomalies over time?**
+1. How do CO₂ emissions correlate with global temperature anomalies over time?
+2. Can methane, nitrous oxide, and land use change CO₂ further explain global temperature changes in a multivariate context?
 
 ## 📊 Summary of Findings
 
-- A strong positive correlation was found between global CO₂ emissions and temperature anomalies (r = 0.95).
-- Linear regression analysis showed that CO₂ emissions significantly predicted temperature anomalies:
-  - **b** = 0.00003, **t**(142) = 31.05, **p** < .001, **R²** = .87
-- This supports the hypothesis that increasing greenhouse gas emissions contribute significantly to global warming.
+- **Simple Linear Regression:** A strong positive correlation was found between CO₂ emissions and global temperature anomalies (r = 0.95).
+- **Multivariate Regression:** A model including CO₂, methane, nitrous oxide, and land use change CO₂ explained 88% of the variance in temperature anomalies (**R² = .88**). Among these, only CO₂ was a statistically significant predictor (**p < .001**).
 
 ## 📁 Project Structure
 
 ```
-climate-emissions-temp-analysis/
+climate-emissions-analysis/
 │
 ├── data/
-│   ├── owid-co2-data.csv              # CO₂ emissions dataset
-│   └── GLB.Ts+dSST.csv                # NASA GISTEMP temperature anomalies
+│   ├── owid-co2-data.csv
+│   └── GLB.Ts+dSST.csv
 │
 ├── analysis/
-│   └── Climate_Study.ipynb  # Data cleaning, analysis, and modeling
+│   ├── emissions_temperature_analysis.ipynb  # Includes cleaning, modeling, and visualization
 │
 ├── output/
-│   └── CO2_Emissions_and_Temperature_Anomalies_Report.pdf  # Final APA-style report
+│   ├── CO2_Emissions_and_Temperature_Anomalies_Report.docx
+│   └── Multivariate_CO2_Emissions_Report.docx
 │
 ├── README.md
 └── requirements.txt
@@ -34,9 +34,9 @@ climate-emissions-temp-analysis/
 
 ## 🧰 Tools Used
 
-- Python (Pandas, Matplotlib, Seaborn, Scikit-learn, Statsmodels)
-- Jupyter Notebook
-- Microsoft Word (for the APA-style report)
+- **Python** (Pandas, Matplotlib, Seaborn, Statsmodels, Scikit-learn)
+- **Jupyter Notebook**
+- **Microsoft Word** (APA-style reporting)
 
 ## 📦 Setup
 
@@ -45,7 +45,7 @@ climate-emissions-temp-analysis/
    ```
    pip install -r requirements.txt
    ```
-3. Run the notebook in the `analysis/` folder
+3. Open the notebook in the `analysis/` folder to explore the data and models
 
 ## 📚 Data Sources
 
@@ -54,8 +54,8 @@ climate-emissions-temp-analysis/
 
 ## 📄 License
 
-This project is for educational and demonstration purposes. Data sources remain under their original licenses.
+This project is for educational and demonstration purposes. Data sources are subject to their original licenses.
 
 ---
 
-Feel free to explore, adapt, or build upon this project. Contributions are welcome!
+Feel free to fork, modify, and build on this project. Contributions and feedback are welcome!
