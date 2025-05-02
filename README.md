@@ -23,7 +23,7 @@ climate-emissions-temp-analysis/
 │   └── GLB.Ts+dSST.csv                # NASA GISTEMP temperature anomalies
 │
 ├── analysis/
-│   └── emissions_temperature_analysis.ipynb  # Data cleaning, analysis, and modeling
+│   └── Climate_Study.ipynb  # Data cleaning, analysis, and modeling
 │
 ├── output/
 │   └── CO2_Emissions_and_Temperature_Anomalies_Report.pdf  # Final APA-style report
