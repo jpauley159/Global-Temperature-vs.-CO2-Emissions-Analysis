@@ -26,7 +26,7 @@ climate-emissions-temp-analysis/
 │   └── emissions_temperature_analysis.ipynb  # Data cleaning, analysis, and modeling
 │
 ├── output/
-│   └── CO2_Emissions_and_Temperature_Anomalies_Report.docx  # Final APA-style report
+│   └── CO2_Emissions_and_Temperature_Anomalies_Report.pdf  # Final APA-style report
 │
 ├── README.md
 └── requirements.txt
